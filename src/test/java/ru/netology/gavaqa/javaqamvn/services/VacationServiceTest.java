@@ -1,8 +1,6 @@
+package ru.netology.gavaqa.javaqamvn.services;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import ru.netology.gavaqa.javaqamvn.services.VacationService;
-
-import javax.annotation.processing.SupportedAnnotationTypes;
 
 public class VacationServiceTest {
 
@@ -13,7 +11,7 @@ public class VacationServiceTest {
         int expenses = 3_000;
         int threshold = 20_000;
         int expected = 3;
-        int actual = service.calculate(income, expenses, threshold);
+        int actual = service.calculateDays(income, expenses, threshold);
         Assertions.assertEquals(expected, actual);
 
     }
